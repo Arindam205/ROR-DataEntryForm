@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ROR Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div id="accordion">
+
+    <!-- RorMaster Details Section -->
+    <div class="card">
+      <div class="card-header" id="headingRorMaster">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRorMaster" aria-expanded="true" aria-controls="collapseRorMaster">
+            RorMaster Details
+          </button>
+        </h5>
+      </div>
+      <div id="collapseRorMaster" class="collapse show" aria-labelledby="headingRorMaster" data-parent="#accordion">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="oldRorId">Old ROR ID</label>
+            <input type="text" class="form-control" id="oldRorId" placeholder="Enter Old ROR ID">
+          </div>
+          <div class="form-group">
+            <label for="rationCardNumber">Ration Card Number</label>
+            <input type="text" class="form-control" id="rationCardNumber" placeholder="Enter Ration Card Number">
+          </div>
+          <div class="form-group">
+            <label for="familyIncome">Family Income</label>
+            <input type="number" class="form-control" id="familyIncome" placeholder="Enter Family Income">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Civic Details Section -->
+    <div class="card">
+      <div class="card-header" id="headingCivicDetails">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCivicDetails" aria-expanded="false" aria-controls="collapseCivicDetails">
+            Civic Details
+          </button>
+        </h5>
+      </div>
+      <div id="collapseCivicDetails" class="collapse show" aria-labelledby="headingCivicDetails" data-parent="#accordion">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="electricityConnection">Electricity Connection</label>
+            <input type="text" class="form-control" id="electricityConnection" placeholder="Enter Electricity Connection Status">
+          </div>
+          <div class="form-group">
+            <label for="septicTankSewerageConnection">Septic Tank/Sewerage Connection</label>
+            <input type="text" class="form-control" id="septicTankSewerageConnection" placeholder="Enter Septic Tank/Sewerage Connection Status">
+          </div>
+          <div class="form-group">
+            <label for="constructionType">Construction Type</label>
+            <input type="text" class="form-control" id="constructionType" placeholder="Enter Construction Type">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Family Members Section -->
+    <div class="card">
+      <div class="card-header" id="headingFamilyMembers">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFamilyMembers" aria-expanded="false" aria-controls="collapseFamilyMembers">
+            Family Members
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFamilyMembers" class="collapse show" aria-labelledby="headingFamilyMembers" data-parent="#accordion">
+        <div class="card-body">
+          <div id="family-members-container">
+            <!-- Family Member Form Fields -->
+
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="title">Title</label>
+                <select class="form-control" id="title">
+                  <option value="Mr.">Mr.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Dr.">Dr.</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="middleName">Middle Name</label>
+                <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="relationWithHOF">Relation with Head of Family</label>
+                <input type="text" class="form-control" id="relationWithHOF" placeholder="Enter Relation with HOF">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" class="form-control" id="dateOfBirth">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Transgender">Transgender</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="educationQualification">Education Qualification</label>
+                <select class="form-control" id="educationQualification">
+                  <option value="School(I-VII)">School (I-VII)</option>
+                  <option value="School(IX-X)">School (IX-X)</option>
+                  <option value="School(X-XII)">School (X-XII)</option>
+                  <option value="Graduate">Graduate</option>
+                  <option value="Post Graduate">Post Graduate</option>
+                  <option value="Phd">PhD</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="isHeadOfFamily">Is Head of Family</label>
+                <select class="form-control is-head-of-family" id="isHeadOfFamily">
+                  <option value="true">Yes</option>
+                  <option value="false" selected>No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="religion">Religion</label>
+                <select class="form-control" id="religion">
+                  <option value="Hindu">Hindu</option>
+                  <option value="Muslim">Muslim</option>
+                  <option value="Christian">Christian</option>
+                  <option value="Sikh">Sikh</option>
+                  <option value="Buddhists">Buddhists</option>
+                  <option value="Jains">Jains</option>
+                  <option value="Zoroastrianism">Zoroastrianism</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="identityProof">Identity Proof</label>
+                <select class="form-control" id="identityProof">
+                  <option value="Aadhar Card">Aadhar Card</option>
+                  <option value="PAN Card">PAN Card</option>
+                  <option value="Voter ID">Voter ID</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="idNumber">ID Number</label>
+                <input type="text" class="form-control" id="idNumber" placeholder="Enter ID Number">
+              </div>
+            </div>
+            
+            <button type="button" class="btn btn-danger remove-family-member" onclick="removeFamilyMember(1)">Remove</button>
+            <hr>
+          </div>
+
+          <!-- Add More button -->
+          <div class="form-group mt-4">
+            <button type="button" class="btn btn-success" id="addFamilyMember">Add More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address Details Section -->
+    <div class="card">
+      <div class="card-header" id="headingAddressDetails">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAddressDetails" aria-expanded="false" aria-controls="collapseAddressDetails">
+            Address Details
+          </button>
+        </h5>
+      </div>
+      <div id="collapseAddressDetails" class="collapse show" aria-labelledby="headingAddressDetails" data-parent="#accordion">
+        <div class="card-body">
+          <!-- Address Details Form Fields -->
+          <div class="form-group">
+            <label for="gisPropertyId">GIS Property ID</label>
+            <input type="text" class="form-control" id="gisPropertyId" placeholder="Enter GIS Property ID">
+          </div>
+          <div class="form-group">
+            <label for="wardNumber">Ward Number</label>
+            <input type="number" class="form-control" id="wardNumber" placeholder="Enter Ward Number">
+          </div>
+          <div class="form-group">
+            <label for="locality">Locality</label>
+            <input type="text" class="form-control" id="locality" placeholder="Enter Locality">
+          </div>
+          <div class="form-group">
+            <label for="subLocality">Sub-Locality</label>
+            <input type="text" class="form-control" id="subLocality" placeholder="Enter Sub-Locality">
+          </div>
+          <div class="form-group">
+            <label for="postOffice">Post Office</label>
+            <input type="text" class="form-control" id="postOffice" placeholder="Enter Post Office">
+          </div>
+          <div class="form-group">
+            <label for="policeStation">Police Station</label>
+            <input type="text" class="form-control" id="policeStation" placeholder="Enter Police Station">
+          </div>
+          <div class="form-group">
+            <label for="roadName">Road Name</label>
+            <input type="text" class="form-control" id="roadName" placeholder="Enter Road Name">
+          </div>
+          <div class="form-group">
+            <label for="pinCode">PIN Code</label>
+            <input type="text" class="form-control" id="pinCode" placeholder="Enter PIN Code">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group mt-4">
+      <button type="submit" class="btn btn-primary">Submit Form</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  let familyMemberCount = 1; // Start with 1, as one member is loaded by default
+  let headOfFamilySelected = false; // Tracks if "Yes" is selected for Head of Family
+
+  // Add event listener for the first family member's Head of Family
+  document.getElementById('isHeadOfFamily').addEventListener('change', function(event) {
+    handleHeadOfFamilyChange(event.target);
+  });
+
+  // Function to handle changes to Head of Family status
+  function handleHeadOfFamilyChange(target) {
+    if (target.value === 'true') {
+      headOfFamilySelected = true;
+      updateAllIsHeadOfFamily();
+    } else if (target.value === 'false') {
+      headOfFamilySelected = false;
+      enableAllIsHeadOfFamily();
+    }
+  }
+
+  // Add Family Member Section dynamically
+  function addFamilyMember() {
+    familyMemberCount++;
+
+    let familyMemberSection = document.createElement('div');
+    familyMemberSection.className = 'family-member-section mt-3';
+    familyMemberSection.id = `familyMember${familyMemberCount}`;
+    
+    // New Family Member HTML
+    familyMemberSection.innerHTML = `
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="title${familyMemberCount}">Title</label>
+          <select class="form-control" id="title${familyMemberCount}">
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="firstName${familyMemberCount}">First Name</label>
+          <input type="text" class="form-control" id="firstName${familyMemberCount}" placeholder="Enter First Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="middleName${familyMemberCount}">Middle Name</label>
+          <input type="text" class="form-control" id="middleName${familyMemberCount}" placeholder="Enter Middle Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="lastName${familyMemberCount}">Last Name</label>
+          <input type="text" class="form-control" id="lastName${familyMemberCount}" placeholder="Enter Last Name">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="relationWithHOF${familyMemberCount}">Relation with Head of Family</label>
+          <input type="text" class="form-control" id="relationWithHOF${familyMemberCount}" placeholder="Enter Relation with HOF">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="dateOfBirth${familyMemberCount}">Date of Birth</label>
+          <input type="date" class="form-control" id="dateOfBirth${familyMemberCount}">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="gender${familyMemberCount}">Gender</label>
+          <select class="form-control" id="gender${familyMemberCount}">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="phoneNumber${familyMemberCount}">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber${familyMemberCount}" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="educationQualification${familyMemberCount}">Education Qualification</label>
+          <select class="form-control" id="educationQualification${familyMemberCount}">
+            <option value="School(I-VII)">School (I-VII)</option>
+            <option value="School(IX-X)">School (IX-X)</option>
+            <option value="School(X-XII)">School (X-XII)</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Post Graduate">Post Graduate</option>
+            <option value="Phd">PhD</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="isHeadOfFamily${familyMemberCount}">Is Head of Family</label>
+          <select class="form-control is-head-of-family" id="isHeadOfFamily${familyMemberCount}" ${headOfFamilySelected ? 'disabled' : ''}>
+            <option value="true">Yes</option>
+            <option value="false" ${headOfFamilySelected ? 'selected' : ''}>No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="religion${familyMemberCount}">Religion</label>
+          <select class="form-control" id="religion${familyMemberCount}">
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+            <option value="Sikh">Sikh</option>
+            <option value="Buddhists">Buddhists</option>
+            <option value="Jains">Jains</option>
+            <option value="Zoroastrianism">Zoroastrianism</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="identityProof${familyMemberCount}">Identity Proof</label>
+          <select class="form-control" id="identityProof${familyMemberCount}">
+            <option value="Aadhar Card">Aadhar Card</option>
+            <option value="PAN Card">PAN Card</option>
+            <option value="Voter ID">Voter ID</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="idNumber${familyMemberCount}">ID Number</label>
+          <input type="text" class="form-control" id="idNumber${familyMemberCount}" placeholder="Enter ID Number">
+        </div>
+      </div>
+      
+      <button type="button" class="btn btn-danger remove-family-member" onclick="removeFamilyMember(${familyMemberCount})">Remove</button>
+      <hr>
+    `;
+
+    document.getElementById('family-members-container').appendChild(familyMemberSection);
+
+    // Attach event listener for "Is Head of Family" field
+    document.getElementById(`isHeadOfFamily${familyMemberCount}`).addEventListener('change', function(event) {
+      handleHeadOfFamilyChange(event.target);
+    });
+  }
+
+  // Remove Family Member Section
+  function removeFamilyMember(id) {
+    const familyMemberSection = document.getElementById(`familyMember${id}`);
+    familyMemberSection.remove(); // Removes the entire family member section
+
+    // After removing, check if the head of family is still selected
+    checkHeadOfFamily();
+  }
+
+  // Function to update all "Is Head of Family" fields after Yes is selected
+  function updateAllIsHeadOfFamily() {
+    const headOfFamilyFields = document.querySelectorAll('.is-head-of-family');
+    headOfFamilyFields.forEach(field => {
+      if (field.value !== 'true') {
+        field.value = 'false';
+        field.disabled = true; // Disable all other head-of-family dropdowns
+      }
+    });
+  }
+
+  // Function to enable all "Is Head of Family" fields if Yes is not selected
+  function enableAllIsHeadOfFamily() {
+    const headOfFamilyFields = document.querySelectorAll('.is-head-of-family');
+    headOfFamilyFields.forEach(field => {
+      field.disabled = false; // Enable the dropdowns again
+    });
+  }
+
+  // Check if Head of Family exists after removing a member
+  function checkHeadOfFamily() {
+    const headOfFamilyFields = document.querySelectorAll('.is-head-of-family');
+    headOfFamilySelected = false;
+
+    headOfFamilyFields.forEach(field => {
+      if (field.value === 'true') {
+        headOfFamilySelected = true;
+      }
+    });
+
+    // If no Head of Family is selected, enable the option for others
+    if (!headOfFamilySelected) {
+      enableAllIsHeadOfFamily();
+    }
+  }
+
+  // Attach the addFamilyMember function to the Add More button
+  document.getElementById('addFamilyMember').addEventListener('click', addFamilyMember);
+
+</script>
+
+
+</body>
+</html>

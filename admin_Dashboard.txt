@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agartala Municipal Corporation</title>
+    <link rel="icon" href="assets/favcon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+
+<div class="w-dyn-list" style="text-align: left;" align="left">
+        <div role="list" class="w-dyn-items" style="text-align: left;" align="left">
+            <div role="listitem" class="w-dyn-item" style="text-align: left;" align="left">
+                <a href="" class="banner w-inline-block" style="background-color: white; width: 32%; text-align: left">
+                    <div class="container" style="text-align: left;">
+                        <div class="banner-content-wrapper" style="text-align: left; -webkit-justify-content: left" align="left">
+                            <div class="col-md-2" style="text-align: left; padding-top: 0px;" align="left">
+                                <img src="assets/Logo Corporation 3.png" width="70" height="70" class="img-responsive center-block">
+                            </div>
+                            <div class="auto-style1" style="text-align: left; padding-top: 0px; padding-left: 0px;" align="left">
+                                <span style="color: #000000; font-size: 30px; padding-top: 0px; text-align: center; font-weight: bold; font-family: Tahoma;">AGARTALA MUNICIPAL CORPORATION</span>
+                                <br />
+                                <span style="color: #000000; font-size: 20px; padding-top: 0px; text-align: center; font-weight: bold; font-family: Tahoma;">e-Subidha</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="space">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4ebe12;">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <a class="navbar-brand" target="_blank" href="https://amcservices.agartalasmartcityservices.in/amcdashboard/">Dashboard</a>
+            <ul class="nav-log navbar-brand navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Department Login
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://agartalasmartcityservices.in/amcptax/#/" target="_blank">Property Tax</a></li>
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amcesubidha/Login.aspx" target="_blank">MISC counter</a></li>
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amcesubidha/Login.aspx" target="_blank">Trade license</a></li>
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amcesubidha/Login.aspx" target="_blank">Signage/Hoarding Application</a></li>
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amcobps/frm_login.aspx" target="_blank">Building plan/construction permit</a></li>
+                        <!-- <li><a class="dropdown-item" href="https://edistrict.tripura.gov.in/">Sewer connection</a></li> -->
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amcesubidha/Login.aspx" target="_blank">Septic tank clear</a></li>
+                        <li><a class="dropdown-item" href="https://amcservices.agartalasmartcityservices.in/amctouji/Login.aspx" target="_blank">Touji</a></li>
+                        <!-- <li><a class="dropdown-item" href="https://emunicipality.tripura.gov.in/grievance/frm_login.aspx">Grievance</a></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+</body>
+</html>
